@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter Room</title>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Kwitter_room.css">
+
+</head>
+<div class="container">
+    <button class="btn btn-primary" onclick="logout()">Logout</button>
+</div>
+
+A HTML tag for holding all the messages coming from firebase. Give id to this element for updating its value whenever required.
+An input box for taking the message, make sure that this input box has an id for identification of this input box.
+A send button with onclick functionality. This function will be used to add the message in the firebase database.
+Give some bootstrap classes to make all the preceding elements attractive, you can also give some additional style in kwitter_room.css.
+Copy and paste the firebase links in kwitter_page.js.
+Write code in kwitter_page.js for taking the username and room name from the localStorage and store it inside the variables. Use the same variable name as the below image as these names will be used while storing the username in the firebase database.
+</html>
