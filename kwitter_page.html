@@ -17,13 +17,20 @@
 
 </head>
 <div class="container">
-    <button class="btn btn-primary" onclick="logout()">Logout</button>
+<button id="logout" onclick="logout();" class="glyphicon glyphicon-log-out btn btn-danger">Logout</button>
+<center>
+    <h1 class="header">Lets Chat WebApp </h1>
+    <div id="output" style="text-align: left; margin-bottom: 70px;"> </div>
+</center>
 </div>
 
-A HTML tag for holding all the messages coming from firebase. Give id to this element for updating its value whenever required.
-An input box for taking the message, make sure that this input box has an id for identification of this input box.
-A send button with onclick functionality. This function will be used to add the message in the firebase database.
-Give some bootstrap classes to make all the preceding elements attractive, you can also give some additional style in kwitter_room.css.
-Copy and paste the firebase links in kwitter_page.js.
-Write code in kwitter_page.js for taking the username and room name from the localStorage and store it inside the variables. Use the same variable name as the below image as these names will be used while storing the username in the firebase database.
+<center>
+<div class="input_div_message_page">
+    <label>Send: </label>
+    <input type="text" id="msg" class="form-control" placeholder="Message">
+    <button onclick="send()" class="btn btn-success">Send</button>
+</div>
+</center>
+<script src="kwitter_page.js"></script>
+</body>
 </html>
